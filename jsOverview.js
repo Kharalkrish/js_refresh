@@ -184,3 +184,188 @@ let arr2 = [4,5,6];
 // console.log(Math.ceil(4.5));
 // console.log(Math.floor(Math.random(3.4)*5));
 // console.log(Math.pow(2,3));
+
+
+// console.log("a");
+
+// setTimeout(()=>{
+//     console.log("b");
+// },Math.abs(-10));
+
+// console.log("c");
+
+// callback function and callback hell in js 
+// function showallrecord(showdetails){
+//     let studentdata = ["krish","rupesh","ram","shyam","sita"];
+//     console.log(showdetails(studentdata));
+// }
+
+
+// const showrecord = (data)=>{
+//   data.map((items,id)=>{
+//     return `your roll number is ${id} and your name is ${items}`;
+//   })
+// }
+
+
+// showallrecord(showrecord);
+
+// promises 
+// function showdata() {
+//     // promise is like and object it takes two parameter resolve and reject.
+//     return new Promise((resolve, reject) => {
+//         console.log("pending")
+//         setTimeout(() => {
+//             if (Math.random() > 0.5) {
+//                 resolve(`resolved`);
+//             } else {
+//                 reject(new Error("err"));
+//             }
+//         }, 3000);
+//     });
+// }
+
+// console.log(showdata());
+
+// let ,const ,var in js 
+// let names = "krish"; //these is global variable we can access these value from everywhere
+// function showname(){
+//     // let names = "krish"; // these is local variable only can access from inside of this function
+//     console.log(names);
+// }
+
+// showname();
+// console.log(names);
+
+// we can create multiple variable with same name by using var 
+// var n1 = "hello";
+// var n1 = "krish";
+// console.log(n1);
+
+
+// rest operator,spring operator 
+// let data = [1,2,3,4];
+ // console.log([45,...data]); output : [45,1,2,3,4]
+// function showdata(num1,num2,num3,...items){
+//    console.log(num1);
+//    console.log(num2 + " "+ num3);
+   // now items is the array
+//    items.map((item,id)=>{
+//     console.log(item);
+//    })
+// }
+
+// showdata("hello",1,"world",4,5,6,7)
+
+// ternary operator 
+// console.log(true == false ? "condition true":"condition false"); 
+// output: condition false
+
+// sets in js 
+// let d = new Set([1,2,3,4,5,2,2,3]);
+// d.add(300,50,90);
+// d.delete(1);
+// d.clear();
+// console.log(d.entries());
+// let e = d.entries();
+
+// for(let i = 0; i<=3; i++){
+//     console.log(e.next().value);
+// }
+
+
+// json data 
+let jsondata = '{ "employees" : [' +
+'{ "firstName":"krish" , "lastName":"kharal" },' +
+'{ "firstName":"janak" , "lastName":"khanal" },' +
+'{ "firstName":"ram" , "lastName":"gaihre" } ]}';
+
+
+// console.log(typeof(jsondata)); // string type
+// convert string to object 
+// let parsedata = JSON.parse(jsondata);
+// console.log(typeof parsedata);  // object type
+// let data = parsedata.employees; 
+// data.map((items)=>{
+//     console.log(`My name is ${items.firstName + " "+ items.lastName}`);
+// })
+
+// convert object to string 
+// let s = {};
+// console.log(typeof(s));  //object 
+// let s1 = JSON.stringify(s); //string
+// console.log(typeof s1);
+
+
+// window object model 
+// console.log(window.location.href);
+// window.reload();
+// window.open();
+// window.close();
+// window.resizeBy();
+// window.resizeTo();
+// window.prompt("hello how are you");
+// window.confirm("are you sure you want to delete this");
+
+// document object modal
+// console.log(document);
+// console.log(document.title);
+// console.log(document.location.href);
+// console.log(document.head);
+// console.log(document.URL);
+
+// how to create element in document
+// let container1 = document.createElement("div");
+// let container2 = document.createElement("div");
+// container1.innerHTML = "<h2>hello world</h2>";
+// container1.innerHTML = "<h3>hello world</h3>";
+// h1.innerText = "hello world";
+// h1.textContent = "hello krish";
+// console.log(h1.innerText);
+// console.log(container.innerHTML);
+// container2.appendChild(container1);
+
+
+// let ul = document.getElementsByTagName("ul");
+// console.log(ul[0].parentElement);
+// console.log(ul[0].parentNode);
+// console.log(ul[0].previousElementSibling);
+// console.log(ul[0].parentElement.nextElementSibling);
+// console.log(ul[0].children);
+// console.log(ul[0].childNodes);
+
+
+// let div = document.createElement("div");
+// let cont = document.querySelector('cont');
+
+// div.innerHTML = "<h1>hello world</h1>";
+// div.classList.add("container")
+// div.id = "thisIsId";
+// console.log(div.classList.contains("container")); //it will return true : the container class is in div
+// console.log(div.classList.item);
+// console.log(div.classList.length);
+// console.log(div.classList.replace("container","helloworld"));
+// console.log(div.classList.remove("container"));
+// console.log(div.className); 
+// console.log(div.innerHTML);
+
+// select multiple list 
+// let li = document.getElementsByTagName("li");
+
+// for(let i=0; i<=li.length; i++){
+//     li[i].innerHTML = `<h1>hello world ${i}</h1>`;
+// }
+// console.log(li);
+
+
+// let a1 = document.getElementsByClassName("flex");
+// document.onclick=()=>{
+//     if(a1[0].classList.contains("bgcolor")){
+//       a1[0].classList.remove("bgcolor")
+//     }else{
+//       a1[0].classList.add("bgcolor")
+//     }
+// }
+
+
+
